@@ -15,8 +15,10 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 				<ee:set-payload ><![CDATA[%dw 2.0
 output application/json
 ---
-"Hi Mawa. Jai balayya. Jai akhanda."]]></ee:set-payload>
+"Hi Mawa. Jai balayya. Jai akhanda.
+neyavva thaggedele balayyababu thopu rea saami amma thodu addanga narikestha"]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="e7d08795-fd06-412f-8abc-044ef65a8f1c" message='this is a mule default logger message  saying : "jaiiii balayya"'/>
 	</flow>
 </mule>
